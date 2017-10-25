@@ -27,6 +27,11 @@ class WordData {
                       letters: "hisswy",
                       words: ["swishy", "hissy","swish", "hiss","whys","wish","wiss","ywis", "his","shy","sis","why","wis"])
     ]
+    func getRndWord() -> TestTwistInfo {
+        var randomWord: TestTwistInfo
+        randomWord = WordData.allInfo[Int(arc4random_uniform(2))]
+        return randomWord
+    }
 }
     /*
     static let allInfo2: [TestTwistInfo] = [
